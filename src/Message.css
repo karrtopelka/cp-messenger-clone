@@ -1,0 +1,26 @@
+.message {
+    padding: 2px;
+    margin: 2px;
+    word-wrap: break-word;
+    width: fit-content;
+    max-width: 90%;
+}
+
+.message__user {
+    margin-left: auto;
+    text-align: left !important;
+}
+
+.message__userCard {
+    color: white !important;
+    background-color: #0b81ff !important;
+}
+
+.message > div > div {
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+}
+
+.message__guestCard {
+    background-color: #e9e9eb !important;
+}

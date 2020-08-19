@@ -1,38 +1,66 @@
 .App {
-  text-align: center;
+    text-align: center;
+    margin: 0 30vw;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app__form {
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 40vw !important;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app__form > div > * {
+    margin: 0 10px !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.app__form div div::after,
+div::before {
+    border-bottom: none !important;
 }
 
-.App-link {
-  color: #61dafb;
+.app__form > div {
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app__form > div > div {
+    background-color: rgba(194, 194, 194, 0.507);
+    border-radius: 100em;
+    width: 100%;
+}
+
+.app__form input {
+    padding: 7px 16px !important;
+}
+
+.app__form > div > button {
+    width: 1.2em;
+    height: 1.2em;
+    transition: 250ms ease;
+}
+
+.app__form > div > button:not([disabled]) {
+    color: #3f51b5;
+    transform: rotate(-90deg);
+}
+
+.app__form > div > button:hover {
+    cursor: pointer;
+    color: #3848a1;
+    background-color: none;
+}
+
+.message__block {
+    margin: 0;
+    margin-bottom: 100px;
 }
